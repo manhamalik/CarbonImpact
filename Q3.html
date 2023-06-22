@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<title>Question 3</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	</head>
+<style>
+		div {width:100%; padding-bottom:10px; padding-top:10px; margin-top:10px}
+		h1, h2, p, ul {color:white; font-family:raleway; font-weight:normal}
+		h2, h1 {font-size:36px}
+
+.button {
+		  background-color: #1E8449;
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		  -webkit-transition-duration: 0.4s;
+		  transition-duration: 0.4s;
+		}
+
+.button1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.img2 {
+  min-height: 20%;
+  background-position: center;
+  background-size: cover;
+}
+.img2 {background-image: url("https://images.unsplash.com/photo-1550147760-44c9966d6bc7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80")}
+</style>
+<div class="img2">
+      <div class="display-middle w3-text-white w3-center">
+    <h1 class="jumbo">How many servings of the following do you eat in an average week? </h1><br>
+    <h3>An average serving is 4 ounces</h3>
+
+    
+
+<input type="checkbox" name="home[meat][beef][select]" value="beef" 
+		class="conditional-source" id="home-meat-beef" /> Beef </label>
+	<input type="number" name="home[meat][beef][servings]"  placeholder="Estimated Servings" 
+		class="conditional-answer" rel="home-meat-beef" data-value="beef" min="0" />
+    <br>
+    <label>
+	<input type="checkbox" name="home[meat][pork][select]" value="pork" 
+		class="conditional-source" id="home-meat-pork" /> Pork </label>
+	<input type="number" name="home[meat][pork][servings]"  placeholder="Estimated Servings" 
+		class="conditional-answer" rel="home-meat-pork" data-value="pork" min="0" />
+</br>
+<label>
+	<input type="checkbox" name="home[meat][poultry][select]" value="poultry" 
+		class="conditional-source" id="home-meat-poultry" /> Poultry </label>
+	<input type="number" name="home[meat][poultry][servings]"  placeholder="Estimated Servings" 
+		class="conditional-answer" rel="home-meat-poultry" data-value="poultry" min="0" />
+	
+<div>
+  <div class="center"><a href="Q4.html"><button class="button button1">Next</button></a>
+				</div>
+                <div>
+					<a href="Q2.html"><button class="button button2">Back</button></a>
+				</div>
+
+
+
+
+	</div>
+</body>
+</html>

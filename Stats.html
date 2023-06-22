@@ -1,0 +1,111 @@
+<html>
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-food.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+<title>Real-Time-Statistics</title>
+     <style>
+       body,h2{
+       
+    background-color: #208a33;
+		font-family: Trebuchet MS, sans-serif;
+	   }
+     body {
+  font-size: 18px;
+}
+       </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+   <body>
+     <a href="index.html"><img src="https://cdn.pixabay.com/photo/2017/09/12/06/26/home-2741413__340.png" width="70" height="70"></a>
+    
+      <h2 class="w3-center w3-text-white"><b>Real-Time Environmental Statistics</b></h2>
+      <div>
+      <div style=" background-color: green;width:100%;display:table;">
+        <div style="display:table-row;height:100%;">
+         <div style="background-color:green;display:table-cell;width:30%; height:100%;text-align:right;vertical-align:middle">
+           <iframe title='Tons Of Waste Dumped' src='https://www.theworldcounts.com/embed/challenges/104?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14'  style='border:2px solid black;height:25%'></iframe>
+         </div>
+         <div style="background-color:green;display:table-cell;width:70%; height:100%;vertical-align:middle" class="w3-center w3-text-white" >
+           <form>
+            Take the current amount of trash and input it here.
+           <input type="text" class="waste_ip" value="" size="6"/> <br>That weighs about as much as <input type="text" id="waste_op" value="" disabled size="10" /> <b>Titanics</b>!</br>
+           </form>
+         </div>
+        </div>
+        <div style="display:table-row;height:100%">
+         <div style="background-color:green;display:table-cell;width:30%; height:100%;text-align:right;vertical-align:middle" >
+           <iframe title='Cost Of Not Acting On Climate Change (US $)'  src='https://www.theworldcounts.com/embed/challenges/98?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14'  style='border:2px solid black;height:25%'></iframe>
+         </div>
+         <div style="background-color:green;display:table-cell;width:70%; height:100%;vertical-align:middle" class="w3-center w3-text-white" >
+          <form>
+          Take the current amount of money lost and input it here.
+          <input type="text" class="cost_ip" value="" size="6"/><br>
+            That could buy <input type="text" id="cost_op" value="" disabled size="10" /> <b>yachts</b>!</br>
+           </form>
+         </div>
+        </div>
+        <div style="display:table-row;height:100%">
+         <div style="background-color:green;display:table-cell;width:30%; height:100%;text-align:right;vertical-align:middle" >
+           <iframe title='Hectares of forests cut down or burned' src='https://www.theworldcounts.com/embed/challenges/93?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14' style='border:2px solid black;height:25%'></iframe>
+         </div>
+         <div style="background-color:green;display:table-cell;width:70%; height:100%;vertical-align:middle" class="w3-center w3-text-white" >
+          <form>
+          Take the current amount of trees cut down and input it here.
+          <input type="text" class="energy_ip" value="" size="6"/><br>
+          That's around the same size as <input type="text" id="energy_op" value="" disabled size="10" /> fields the size of <b>Paris</b>!</br>
+           
+           </form>
+         </div>
+        </div>
+        <div style="display:table-row;height:100%">
+         <div style="background-color:green;display:table-cell;width:30%; height:100%;text-align:right;vertical-align:middle" >
+           <iframe title='Time Left To The End Of Oil' src='https://www.theworldcounts.com/embed/challenges/108?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14'  style='border:2px solid black;height:25%'></iframe>
+         </div>
+         <div style="background-color:green;display:table-cell;width:70%; height:100%;vertical-align:middle" class="w3-center w3-text-white" >
+          <form>
+          Input your age here.
+          <input type="text" class="time_ip" value="" size="6"/><br>
+           You will be <input type="text" id="time_op" value="" disabled size="10" /> when the world runs out of its primary fuel resource! With such little time, we need to figure out alternative renewable resources!<br>
+        
+           </form>
+      </div>
+      </div>
+      </div>
+      
+      
+         </div>
+        </div>
+      </div>
+<script>
+  $('.waste_ip').keyup(function () { 
+    this.value = this.value.replace(/[^0-9\.]/g,'');
+    var result = this.value/52310
+    $("#waste_op").val(result.toFixed(3));
+});
+
+  $('.cost_ip').keyup(function () { 
+    this.value = this.value.replace(/[^0-9\.]/g,'');
+    var result = this.value/8400000000
+    $("#cost_op").val(result.toFixed(3));
+});
+
+  $('.energy_ip').keyup(function () { 
+    this.value = this.value.replace(/[^0-9\.]/g,'');
+    var result = this.value/10538
+    $("#energy_op").val(result.toFixed(3));
+});
+
+  $('.time_ip').keyup(function () { 
+    this.value = this.value.replace(/[^0-9\.]/g,'');
+    var result = parseInt(this.value) + 49;
+    $("#time_op").val(result);
+});
+
+  </script>
+     </body>
+</html>
